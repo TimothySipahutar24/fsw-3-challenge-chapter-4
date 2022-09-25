@@ -77,7 +77,7 @@
         <div class="">
           <div class="">
             <img
-              src="/public/images/Mercedes Car EQC 300kW Edition - 900x598 1.png"
+              src="/images/mercedes.png"
               alt="mercedes"
               class="image-hero-section"
             />
@@ -89,33 +89,34 @@
 
     <section>
       <div class="search-box p-4 row row-cols-xl-auto mx-auto mb-4 justify-content-around">
-        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2 inputDriver">
+        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2 input-driver">
             <label class="pb-2">Tipe Driver</label>
             <select class="form-select" id="driver" required>
                 <option value="" hidden>Pilih Tipe Driver</option>
-                <option value="true">Dengan Supir</option>
-                <option value="false">Tanpa Supir(Lepas Kunci)</option>
+                <option value="true" style="font-size: 12px;">Dengan Supir</option>
+                <option value="false" style="font-size: 12px;">Tanpa Supir(Lepas Kunci)</option>
             </select>
         </div>
-        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2 inputDate">
+        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2">
             <label class="pb-2">Tanggal</label>
             <input type="date" id="date" class="form-control" required />
         </div>
-        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2 inputTime">
+        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2">
             <label class="pb-2">Waktu Jemput/Ambil</label>
             <input type="time" id="time" class="form-control" required />
         </div>
-        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2 inputPassanger" style="min-width: 200px">
+        <div class="col-lg col-md-6 col-sm-6 col-xs-12 p-2" style="min-width: 200px">
             <label class="pb-2">Jumlah Penumpang</label>
-            <input type="number" class="form-control" id="passanger" placeholder="Jumlah Penumpang" />
+            <input type="number" class="form-control" id="capacity" placeholder="Jumlah Penumpang" />
         </div>
         <div class="col-lg p-2" style="display: inline-block; align-self: flex-end; height: 100%">
             <button class="btn btn-success" type="button" id="load-btn">Cari Mobil</button>
+            <button class="btn btn-danger" type="button" id="clear-btn">Hapus Entri</button>
         </div>
       </div>
 
       <div id="cars-container">
-        
+
       </div>
     </section>
 
@@ -141,26 +142,26 @@
             <p>Connect with us</p>
             <div class="d-flex flex-row" style="min-width: 268px">
               <img
-                src="/public/asset/icon_facebook.png"
+                src="/images/icon_facebook.png"
                 alt=""
                 style="margin-right: 16px"
               />
               <img
-                src="/public/asset/icon_instagram.png"
+                src="/images/icon_instagram.png"
                 alt=""
                 style="margin-right: 16px"
               />
               <img
-                src="/public/asset/icon_twitter.png"
+                src="/images/icon_twitter.png"
                 alt=""
                 style="margin-right: 16px"
               />
               <img
-                src="/public/asset/icon_mail.png"
+                src="/images/icon_mail.png"
                 alt=""
                 style="margin-right: 16px"
               />
-              <img src="/public/asset/icon_twitch.png" alt="" />
+              <img src="/images/icon_twitch.png" alt="" />
             </div>
           </div>
           <div class="footer-container">
@@ -172,6 +173,9 @@
       </div>
     </footer>
 
-
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
   </body>
 </html>
